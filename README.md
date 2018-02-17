@@ -35,6 +35,7 @@ Result exportation
 ```
 
 ## Authors
+* HOANG Van Quy
 * LE Van Tuan 
     
     
