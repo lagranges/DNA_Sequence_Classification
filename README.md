@@ -1,57 +1,40 @@
-# ADN_Sequence_Classification
+## ADN_Sequence_Classification
 
-# Data Challenge Advanced Learning Moel Project
+## Data Challenge Advanced Learning Moel Project
 
 ## Introduction
 
-The project is implemented in C++ and Open MPI.
-* Input: a txt file/ a comp file (.comp is the extension of compressed file)
-* Output: a comp file/ a txt file
+The project is implemented in Python 3.
 
-## Files
+## Dependencies
         
-Source code (*.cpp, *.hpp)
-This README
-Makefile
+pandas, sklearn, cvxopt, csv
 
-## Compilation and Test Execution 
+## Included files
 
-For executing the unit_tests:
+Data:
 ```
-make test
-./test_* 
+* Tranning Data: Xtr*, Ytr*
+* Testing Data: Xte*
 ```
-* For example ./test_tree
 
-For compressing/decompressing a file:
+Algorithm implementation
 ```
-make
-./hpcompressor -c file_name compressed_file_name 
+* kmeans: Nearest Centroid Algo Implementation 
+* kernel_kmeans: Kenerl Nearest Centroid Algo Implementation
+* logistic_regression
+* mutilnomial_NB : Multinomial Naive Baie
 ```
-* For example 
+Algorithm comparison
 ```
-./hpcompressor -c Tests/francais.txt francais.txt.comp)
+* main.py: Conduct research on the data by comparing some algorithm
 ```
-For checking the result:
+Result exportation
 ```
-cd Test
-./tests_huffman.sh file_name
-```
-For change the thread number:
-```
-change N_THREADS in compressor.hpp
-make clear && make
-```
-To generate a random text file:
-```
-make test
-./test_generator Number_of_megabyte file_name
-ex: ./test_generator 10 10M_text
+* result_export: Export a CSV file that contains predicted labels for Xte*
 ```
 
 ## Authors
-* BOROVEC Ondrej 
 * LE Van Tuan 
-
     
     
