@@ -24,6 +24,7 @@ Algorithm implementation
 * kernel_kmeans: Kenerl Nearest Centroid Algo Implementation
 * logistic_regression
 * mutilnomial_NB : Multinomial Naive Baie
+* kernel_SVM: Kenel Suport Vector Machine
 ```
 Algorithm comparison
 ```
